@@ -1,13 +1,22 @@
-//Write a function that takes an array of numbers.
-//If the array does not have an even number of elements, return null
-//If the array has an even number of elements, add every 2 elements together and store it in a new array.
-//return the new array.
+//Write a function that returns an array of the odd values of the passed in array.
 
-//Call the function with a test array (one with even number of elements and one with an odd number of elements)
-//Output the result of that call to the console via console.log.
+//create a variable to store odd values
+//look through each index of array parameter 
+//  if the value of an index is odd
+//  store odd value in variable
+//return variable
 
-//array[index] means get the value of the array at the index (the value of the variable named index)
-//array[index + 1] get the value of the array at the element to the right of the index
+function returnOddValues(arrayParam) {
+    var oddArray = [];
 
-//When doing this, remember if you do array[index + 1] and index + 1 >= array.length, you will get an error.
-//You shouldn't be dealing with that issue if you're doing it right though.
+    for (let index = 0; index < arrayParam.length; index++) {
+        if (arrayParam[index] % 2 == 1) {
+
+        }
+    }
+}
+
+//Store the result of the function into a variable.
+//Output the variable to the console.
+
+var testArray1 = [7, 6, 5, 4, 3, 2, 1];
