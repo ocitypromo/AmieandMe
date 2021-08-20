@@ -11,6 +11,7 @@ function returnOddValues(arrayParam) {
 
     for (let index = 0; index < arrayParam.length; index++) {
         if (arrayParam[index] % 2 == 1) {
+            console.log(index + ": " + arrayParam[index]);
 
         }
     }
@@ -20,3 +21,5 @@ function returnOddValues(arrayParam) {
 //Output the variable to the console.
 
 var testArray1 = [7, 6, 5, 4, 3, 2, 1];
+
+returnOddValues(testArray1);
