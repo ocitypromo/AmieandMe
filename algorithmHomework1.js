@@ -49,12 +49,32 @@ check if n is multiple of three
 if true return n    
 
 ----
+alg-
+check if 1244(n) isInteger = true
+and between 0 < n < 1e6 = true
+ is 1244 a multiple of 3 = false
+ if false newN = (Math.floor(n / 10)
+ newN = 124
+ n = newN
+ n=124
+
 
 validate if n isInteger and between 0 < n < 1e6
-    if false return ??
+    if false return null
     
 check if n is multiple of 3 (n % 3 = 0)
-    if false remove last number
+    if false 
+        newN = (Math.floor(n / 10))
+        newN = n;
+        return isMultOf3 with newN;
+    if true return n
+     
+                    
+----
+
+Now it works, so the next step is to clean it up a bit. 
+
+
 
 
 
@@ -63,9 +83,16 @@ check if n is multiple of 3 (n % 3 = 0)
 
 
 */
-//console.log(Number.isInteger(7));
+console.log(Number.isInteger(1244));
 
-function isMultOf3() {
+function isMultOf3(number) {
+    if (something) {
+
+    }
+    
+    var n = [];
+
+    if (n % 3 = 0)
 
 
 }
