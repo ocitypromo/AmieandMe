@@ -65,23 +65,74 @@ validate if n isInteger and between 0 < n < 1e6
 check if n is multiple of 3 (n % 3 = 0)
     if false 
         newN = (Math.floor(n / 10))
-        newN = n;
         return isMultOf3 with newN;
     if true return n
+
+
+
      
                     
 ----
-
 Now it works, so the next step is to clean it up a bit. 
+You will need to pick which side (true or false) you want your if statements to handle.
+If you use the true side, your if statements need to be in the affirmative
+if you use the false side, your if statements need to be the opposite of the affirmative
+
+What we're saying with the false side is that if (something is not true) then do this
+For the affirmative side we would say if (something is true) then do this
+
+You will have to pick which side you want to use for the n is multiple of 3 check
+
+validate if n isInteger and between 0 < n < 1e6
+    if false return null
+
+check if n is multiple of 3 (n % 3 = 0)
+    if false
+        return isMultOf3(Math.floor(n / 10)) to make recursive call and remove last digit. 
+    if true return n    
 
 
 
 
 
 
+---
+
+N = 1
+n > 0 is true
+!(n > 0) is false
+n <= 0 is false
+!(n <= 0) is true
+N = 0
+n > 0 is false
+!(n > 0) is true
+n <= 0 is true
+!(n <= 0) is false
 
 
+negating if n isInteger and n > 0 and n < 1e6
 
+!isInteger or n <= 0 or n >= 1e6
+
+validate if a car is red
+    if not red, turn driver away
+
+!(a and b)
+!a or !b
+
+!(a or b)
+!a and !b
+
+!(n > 0)
+n <= 0
+
+<- -3 -2 -1 0 1 2 3 ->
+
+!(n < 0) 
+n >= 0
+
+!(0 < 0) is true
+0 >= 0 is true
 */
 console.log(Number.isInteger(1244));
 
