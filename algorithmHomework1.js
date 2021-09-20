@@ -92,7 +92,7 @@ check if n is multiple of 3 (n % 3 = 0)
     if true return n    
 
 
-
+ Homework
 
 
 
